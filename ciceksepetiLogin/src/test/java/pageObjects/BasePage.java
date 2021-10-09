@@ -39,21 +39,6 @@ public abstract class BasePage {
         WebDriverWait wait = new WebDriverWait(driver, 15);
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
-    public String getProductName(WebElement element) {
-
-        return productName;
-    }
-    public String getProductName() {
-        return productName;
-    }
-    public List<String> getStoreNames() {
-        return storeNames;
-    }
-
-    public void setProductName(String name) {
-        productName = name;
-    }
-
     protected void tryClick(WebElement element) {
         try {
             Thread.sleep(2000);

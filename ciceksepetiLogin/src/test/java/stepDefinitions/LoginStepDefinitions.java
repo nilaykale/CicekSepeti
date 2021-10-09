@@ -2,6 +2,7 @@ package stepDefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.junit.Assert;
 import pageObjects.LoginPage;
 
 public class LoginStepDefinitions extends BaseStepDefinitions{
@@ -20,8 +21,18 @@ public class LoginStepDefinitions extends BaseStepDefinitions{
         loginPage.login();
     }
 
-    @Then("^User should see the error message$")
-    public void ClosePopUp(){
+    @Then("^User should see the error message and close it$")
+    public void CloseErrorMessage(){
         loginPage.CloseErrorMessage();
+    }
+
+    @Then("^User should see the EmailError Messages$")
+    public void CheckEmailErrorMessage(){
+        loginPage.CheckEmailErrorMessage();
+    }
+
+    @Then("^User should see the PasswordError Messages$")
+    public void CheckPasswordErrorMessage(){
+        loginPage.CheckPasswordErrorMessage();
     }
 }

@@ -1,6 +1,6 @@
 Feature: Test login feature
 
-  Scenario Outline: Try to login with different credentials
+  Scenario Outline: Login Success
 
     Given User navigates to login page
     Then User enters <email> and <password>
@@ -17,8 +17,32 @@ Feature: Test login feature
     Given User navigates to login page
     Then User enters <email> and <password>
     Then Click on "Sign In" button
-    Then User should see the error message
+    Then User should see the error message and close it
 
     Examples:
       | email                     | password      |
       | dummyfortesting8@gmail.com| dummyTestAcc7 |
+      | dummyfortesting7@gmail.com| dummyTestAcc8 |
+
+
+  Scenario Outline: Invalid Email Format
+
+    Given User navigates to login page
+    Then User enters <email> and <password>
+    Then User should see the EmailError Messages
+
+    Examples:
+      | email                     | password      |
+      | dummyfortesting8gmail.com | dummyTestAcc7 |
+
+
+  Scenario Outline: Invalid Password Format
+
+    Given User navigates to login page
+    Then User enters <email> and <password>
+    Then Click on "Sign In" button
+    Then User should see the PasswordError Messages
+
+    Examples:
+      | email                     | password      |
+      | dummyfortesting7@gmail.com | ab |
