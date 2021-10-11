@@ -1,0 +1,346 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-11T12:53:47.043Z",
+        "line": 12,
+        "name": "Login Success",
+        "description": "",
+        "id": "test-login-feature;login-success;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3221805400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User navigates to login page",
+            "match": {
+              "location": "stepDefinitions.LoginStepDefinitions.launchBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 421871300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters dummyfortesting7@gmail.com and dummyTestAcc7",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dummyfortesting7@gmail.com",
+                  "offset": 12
+                },
+                {
+                  "val": "dummyTestAcc7",
+                  "offset": 43
+                }
+              ],
+              "location": "stepDefinitions.LoginStepDefinitions.enter_Username_Password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 154586400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click on \"Sign In\" button",
+            "match": {
+              "location": "stepDefinitions.LoginStepDefinitions.login()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2725430400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User navigates to home page",
+            "match": {
+              "location": "stepDefinitions.HomePageStepDefinitions.myAccount()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-11T12:53:53.650Z",
+        "line": 24,
+        "name": "Email wrong Password true",
+        "description": "",
+        "id": "test-login-feature;email-wrong-password-true;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 664649300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User navigates to login page",
+            "match": {
+              "location": "stepDefinitions.LoginStepDefinitions.launchBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 370578000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User enters dummyfortesting8@gmail.com and dummyTestAcc7",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dummyfortesting8@gmail.com",
+                  "offset": 12
+                },
+                {
+                  "val": "dummyTestAcc7",
+                  "offset": 43
+                }
+              ],
+              "location": "stepDefinitions.LoginStepDefinitions.enter_Username_Password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 126526600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Click on \"Sign In\" button",
+            "match": {
+              "location": "stepDefinitions.LoginStepDefinitions.login()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 669398600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User should see the error message and close it",
+            "match": {
+              "location": "stepDefinitions.LoginStepDefinitions.CloseErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-11T12:53:55.487Z",
+        "line": 25,
+        "name": "Email wrong Password true",
+        "description": "",
+        "id": "test-login-feature;email-wrong-password-true;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 451384800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User navigates to login page",
+            "match": {
+              "location": "stepDefinitions.LoginStepDefinitions.launchBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 378058800,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User enters dummyfortesting7@gmail.com and dummyTestAcc8",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dummyfortesting7@gmail.com",
+                  "offset": 12
+                },
+                {
+                  "val": "dummyTestAcc8",
+                  "offset": 43
+                }
+              ],
+              "location": "stepDefinitions.LoginStepDefinitions.enter_Username_Password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 102156100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Click on \"Sign In\" button",
+            "match": {
+              "location": "stepDefinitions.LoginStepDefinitions.login()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 658723400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User should see the error message and close it",
+            "match": {
+              "location": "stepDefinitions.LoginStepDefinitions.CloseErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-11T12:53:57.082Z",
+        "line": 36,
+        "name": "Invalid Email Format",
+        "description": "",
+        "id": "test-login-feature;invalid-email-format;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 429271400,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User navigates to login page",
+            "match": {
+              "location": "stepDefinitions.LoginStepDefinitions.launchBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 408961300,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User enters dummyfortesting8gmail.com and dummyTestAcc7",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dummyfortesting8gmail.com",
+                  "offset": 12
+                },
+                {
+                  "val": "dummyTestAcc7",
+                  "offset": 42
+                }
+              ],
+              "location": "stepDefinitions.LoginStepDefinitions.enter_Username_Password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 49652900,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User should see the EmailError Messages",
+            "match": {
+              "location": "stepDefinitions.LoginStepDefinitions.CheckEmailErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-11T12:53:57.978Z",
+        "line": 48,
+        "name": "Invalid Password Format",
+        "description": "",
+        "id": "test-login-feature;invalid-password-format;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 403654800,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "User navigates to login page",
+            "match": {
+              "location": "stepDefinitions.LoginStepDefinitions.launchBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 364908300,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "User enters dummyfortesting7@gmail.com and ab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dummyfortesting7@gmail.com",
+                  "offset": 12
+                },
+                {
+                  "val": "ab",
+                  "offset": 43
+                }
+              ],
+              "location": "stepDefinitions.LoginStepDefinitions.enter_Username_Password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 88164800,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "Click on \"Sign In\" button",
+            "match": {
+              "location": "stepDefinitions.LoginStepDefinitions.login()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 44951500,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "User should see the PasswordError Messages",
+            "match": {
+              "location": "stepDefinitions.LoginStepDefinitions.CheckPasswordErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test login feature",
+    "description": "",
+    "id": "test-login-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": []
+  }
+]

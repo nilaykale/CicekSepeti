@@ -6,14 +6,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public abstract class BasePage {
 
     protected WebDriver driver;
-    private static String productName;
-    private ArrayList<String> storeNames = new ArrayList<>();
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
