@@ -17,7 +17,8 @@ public abstract class BaseStepDefinitions {
 
     protected void launchBrowser() {
         driver.manage().window().maximize();
-        driver.get("https://www.lolaflora.com/en-es/login");
+        driver.get("https://www.ciceksepeti.com/uye-girisi");
     }
+
 
 }

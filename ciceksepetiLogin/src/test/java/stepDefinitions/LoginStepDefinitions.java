@@ -16,6 +16,12 @@ public class LoginStepDefinitions extends BaseStepDefinitions{
         loginPage.enter_Username_Password(email, password);
     }
 
+    @Then("^Click on \"Accepted\" button$")
+    public void accepted(){
+        loginPage.accepted();
+    }
+
+
     @Then("^Click on \"Sign In\" button$")
     public void login(){
         loginPage.login();
@@ -24,6 +30,11 @@ public class LoginStepDefinitions extends BaseStepDefinitions{
     @Then("^User should see the error message and close it$")
     public void CloseErrorMessage(){
         loginPage.CloseErrorMessage();
+    }
+
+    @Then("^User should see the Password True$")
+    public void PasswordTrue(){
+        loginPage.PasswordTrue();
     }
 
     @Then("^User should see the EmailError Messages$")

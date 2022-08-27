@@ -8,8 +8,6 @@ public class HomePageStepDefinitions extends BaseStepDefinitions{
 
     @Then("^User navigates to home page$")
     public void myAccount(){
-
-        homePage.ClosePopUp();
         homePage.ClickMyAccount();
     }
 }

@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-10-11T12:53:47.043Z",
+        "start_timestamp": "2022-08-27T13:20:12.466Z",
         "line": 12,
         "name": "Login Success",
         "description": "",
@@ -13,66 +13,44 @@
         "steps": [
           {
             "result": {
-              "duration": 3221805400,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 5,
             "name": "User navigates to login page",
-            "match": {
-              "location": "stepDefinitions.LoginStepDefinitions.launchBrowser()"
-            },
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 421871300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 6,
-            "name": "User enters dummyfortesting7@gmail.com and dummyTestAcc7",
-            "match": {
-              "arguments": [
-                {
-                  "val": "dummyfortesting7@gmail.com",
-                  "offset": 12
-                },
-                {
-                  "val": "dummyTestAcc7",
-                  "offset": 43
-                }
-              ],
-              "location": "stepDefinitions.LoginStepDefinitions.enter_Username_Password(java.lang.String,java.lang.String)"
-            },
+            "name": "User enters kale.nilay@ibu.edu.mk and ForAutomation123",
+            "match": {},
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 154586400,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
             "name": "Click on \"Sign In\" button",
-            "match": {
-              "location": "stepDefinitions.LoginStepDefinitions.login()"
-            },
+            "match": {},
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 2725430400,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 8,
             "name": "User navigates to home page",
-            "match": {
-              "location": "stepDefinitions.HomePageStepDefinitions.myAccount()"
-            },
+            "match": {},
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2021-10-11T12:53:53.650Z",
+        "start_timestamp": "2022-08-27T13:20:12.591Z",
         "line": 24,
         "name": "Email wrong Password true",
         "description": "",
@@ -82,66 +60,44 @@
         "steps": [
           {
             "result": {
-              "duration": 664649300,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 17,
             "name": "User navigates to login page",
-            "match": {
-              "location": "stepDefinitions.LoginStepDefinitions.launchBrowser()"
-            },
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 370578000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 18,
             "name": "User enters dummyfortesting8@gmail.com and dummyTestAcc7",
-            "match": {
-              "arguments": [
-                {
-                  "val": "dummyfortesting8@gmail.com",
-                  "offset": 12
-                },
-                {
-                  "val": "dummyTestAcc7",
-                  "offset": 43
-                }
-              ],
-              "location": "stepDefinitions.LoginStepDefinitions.enter_Username_Password(java.lang.String,java.lang.String)"
-            },
+            "match": {},
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 126526600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 19,
             "name": "Click on \"Sign In\" button",
-            "match": {
-              "location": "stepDefinitions.LoginStepDefinitions.login()"
-            },
+            "match": {},
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 669398600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 20,
             "name": "User should see the error message and close it",
-            "match": {
-              "location": "stepDefinitions.LoginStepDefinitions.CloseErrorMessage()"
-            },
+            "match": {},
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2021-10-11T12:53:55.487Z",
+        "start_timestamp": "2022-08-27T13:20:12.607Z",
         "line": 25,
         "name": "Email wrong Password true",
         "description": "",
@@ -151,66 +107,44 @@
         "steps": [
           {
             "result": {
-              "duration": 451384800,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 17,
             "name": "User navigates to login page",
-            "match": {
-              "location": "stepDefinitions.LoginStepDefinitions.launchBrowser()"
-            },
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 378058800,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 18,
             "name": "User enters dummyfortesting7@gmail.com and dummyTestAcc8",
-            "match": {
-              "arguments": [
-                {
-                  "val": "dummyfortesting7@gmail.com",
-                  "offset": 12
-                },
-                {
-                  "val": "dummyTestAcc8",
-                  "offset": 43
-                }
-              ],
-              "location": "stepDefinitions.LoginStepDefinitions.enter_Username_Password(java.lang.String,java.lang.String)"
-            },
+            "match": {},
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 102156100,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 19,
             "name": "Click on \"Sign In\" button",
-            "match": {
-              "location": "stepDefinitions.LoginStepDefinitions.login()"
-            },
+            "match": {},
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 658723400,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 20,
             "name": "User should see the error message and close it",
-            "match": {
-              "location": "stepDefinitions.LoginStepDefinitions.CloseErrorMessage()"
-            },
+            "match": {},
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2021-10-11T12:53:57.082Z",
+        "start_timestamp": "2022-08-27T13:20:12.607Z",
         "line": 36,
         "name": "Invalid Email Format",
         "description": "",
@@ -220,54 +154,35 @@
         "steps": [
           {
             "result": {
-              "duration": 429271400,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 30,
             "name": "User navigates to login page",
-            "match": {
-              "location": "stepDefinitions.LoginStepDefinitions.launchBrowser()"
-            },
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 408961300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 31,
             "name": "User enters dummyfortesting8gmail.com and dummyTestAcc7",
-            "match": {
-              "arguments": [
-                {
-                  "val": "dummyfortesting8gmail.com",
-                  "offset": 12
-                },
-                {
-                  "val": "dummyTestAcc7",
-                  "offset": 42
-                }
-              ],
-              "location": "stepDefinitions.LoginStepDefinitions.enter_Username_Password(java.lang.String,java.lang.String)"
-            },
+            "match": {},
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 49652900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 32,
             "name": "User should see the EmailError Messages",
-            "match": {
-              "location": "stepDefinitions.LoginStepDefinitions.CheckEmailErrorMessage()"
-            },
+            "match": {},
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2021-10-11T12:53:57.978Z",
+        "start_timestamp": "2022-08-27T13:20:12.623Z",
         "line": 48,
         "name": "Invalid Password Format",
         "description": "",
@@ -277,60 +192,38 @@
         "steps": [
           {
             "result": {
-              "duration": 403654800,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 41,
             "name": "User navigates to login page",
-            "match": {
-              "location": "stepDefinitions.LoginStepDefinitions.launchBrowser()"
-            },
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 364908300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 42,
             "name": "User enters dummyfortesting7@gmail.com and ab",
-            "match": {
-              "arguments": [
-                {
-                  "val": "dummyfortesting7@gmail.com",
-                  "offset": 12
-                },
-                {
-                  "val": "ab",
-                  "offset": 43
-                }
-              ],
-              "location": "stepDefinitions.LoginStepDefinitions.enter_Username_Password(java.lang.String,java.lang.String)"
-            },
+            "match": {},
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 88164800,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 43,
             "name": "Click on \"Sign In\" button",
-            "match": {
-              "location": "stepDefinitions.LoginStepDefinitions.login()"
-            },
+            "match": {},
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 44951500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 44,
             "name": "User should see the PasswordError Messages",
-            "match": {
-              "location": "stepDefinitions.LoginStepDefinitions.CheckPasswordErrorMessage()"
-            },
+            "match": {},
             "keyword": "Then "
           }
         ]

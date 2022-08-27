@@ -17,6 +17,9 @@ public class LoginPage extends BasePage{
     @FindBy(id = "Password")
     private  WebElement passwordField;
 
+    @FindBy(id = "onetrust-accept-btn-handler")
+    private  WebElement acceptedButon;
+
     @FindBy(xpath = "//*[@class=\"btn btn-primary btn-lg pull-right login__btn js-login-button\"]")
     private  WebElement loginButton;
 
@@ -29,12 +32,18 @@ public class LoginPage extends BasePage{
     @FindBy(id="EmailLogin-error")
     private WebElement EmailErrorMessage;
 
+    @FindBy(xpath = "//*[@class=\"form-group__placeholder js-validation-label\"]")
+    private WebElement PasswordTrue;
+
     @FindBy(id="Password-error")
     private WebElement PasswordErrorMessage;
 
     public void enter_Username_Password(String email, String password){
         sendKeys(emailField, email);
         sendKeys(passwordField, password);
+    }
+    public void accepted(){
+        click(acceptedButon);
     }
     public void login(){
         click(loginButton);
@@ -45,6 +54,10 @@ public class LoginPage extends BasePage{
     }
    public void CheckEmailErrorMessage(){
        Assert.assertTrue("Uyarı mesajı geldi",isExist(EmailErrorMessage));
+    }
+
+    public void PasswordTrue(){
+        Assert.assertTrue("Uyarı ikonu geldi",isExist(PasswordTrue));
     }
 
     public void CheckPasswordErrorMessage(){
