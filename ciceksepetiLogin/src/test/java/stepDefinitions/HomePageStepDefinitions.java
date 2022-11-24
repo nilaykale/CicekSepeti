@@ -6,8 +6,8 @@ import pageObjects.HomePage;
 public class HomePageStepDefinitions extends BaseStepDefinitions{
     private final HomePage homePage = new HomePage(driver);
 
-    @Then("^User navigates to home page$")
+    @Then("^Click on \"Empty\" area")
     public void myAccount(){
-        homePage.ClickMyAccount();
+        homePage.ClickEmpty();
     }
 }

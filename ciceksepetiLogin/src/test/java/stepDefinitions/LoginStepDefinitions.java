@@ -46,4 +46,9 @@ public class LoginStepDefinitions extends BaseStepDefinitions{
     public void CheckPasswordErrorMessage(){
         loginPage.CheckPasswordErrorMessage();
     }
+
+    @Then("^Click on \"MyAccount\" button$")
+    public void MyAccount(){
+        loginPage.MyAccount();
+    }
 }

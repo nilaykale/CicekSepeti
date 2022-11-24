@@ -15,12 +15,19 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//*[@class=\"subheader-close js-subheader-close is-hidden\"]")
     private WebElement ClosePopUp;
 
-    @FindBy(xpath = "//*[@class=\"user-menu__item user-menu__item--account\"]")
+    @FindBy(xpath = "//*[@class=\"main-eng js-load-complete\"]")
     private WebElement HESABIM_TITLE;
+
+    @FindBy(xpath = "//*[@class=\"main-eng js-load-complete\"]")
+    private WebElement Empty;
 
     public void ClickMyAccount() {
         Assert.assertTrue("-> Giris Yapilamadi!", isExist(HESABIM_TITLE));
         click(myAccount);
+    }
+
+    public void ClickEmpty() {
+        click(Empty);
     }
 
     public void ClosePopUp() {

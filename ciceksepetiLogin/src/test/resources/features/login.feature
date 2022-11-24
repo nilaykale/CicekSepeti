@@ -1,17 +1,5 @@
 Feature: Test login feature
 
-  Scenario Outline: Login Success
-
-    Given User navigates to login page
-    Then User enters <email> and <password>
-    Then Click on "Accepted" button
-    Then Click on "Sign In" button
-    Then User navigates to home page
-
-    Examples:
-      | email                      | password  |
-      | nilay_kale8991@hotmail.com | nilay1676 |
-
 
   Scenario Outline: Email wrong Password true
 
@@ -41,10 +29,21 @@ Feature: Test login feature
 
     Given User navigates to login page
     Then User enters <email> and <password>
-    Then Click on "Accepted" button
     Then Click on "Sign In" button
     Then User should see the PasswordError Messages
 
     Examples:
       | email                     | password      |
       | dummyfortesting7@gmail.com | ab |
+
+
+  Scenario Outline: Login Success
+
+    Given User navigates to login page
+    Then User enters <email> and <password>
+    Then Click on "Sign In" button
+    Then User navigates to home page
+
+    Examples:
+      | email                     | password      |
+      | dummyfortesting7@gmail.com| dummyTestAcc7 |

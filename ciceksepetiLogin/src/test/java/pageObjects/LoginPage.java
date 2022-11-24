@@ -38,6 +38,9 @@ public class LoginPage extends BasePage{
     @FindBy(id="Password-error")
     private WebElement PasswordErrorMessage;
 
+    @FindBy(xpath = "//*[@class=\"main-eng js-load-complete\"]")
+    private WebElement MyAccount;
+
     public void enter_Username_Password(String email, String password){
         sendKeys(emailField, email);
         sendKeys(passwordField, password);
@@ -63,5 +66,10 @@ public class LoginPage extends BasePage{
     public void CheckPasswordErrorMessage(){
         Assert.assertTrue("Uyarı mesajı geldi",isExist(PasswordErrorMessage));
     }
+
+    public void MyAccount(){
+        click(MyAccount);
+    }
+
 }
 
